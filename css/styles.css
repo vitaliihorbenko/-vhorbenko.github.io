@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f5f7fa;
+  padding: 20px;
+  font-size: 14px;
+}
+.wrapper {
+  background: #fff;
+  display: flex;
+  max-width: 1200px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  transition: all 0.7s ease;
+}
+.sidebar {
+  width: 370px;
+  height: auto;
+  background: #1e2939;
+  padding: 40px 0;
+  color: #fff;
+}
+aside img {
+  width: 100%;
+  height: auto;
+}
+.about-me-container {
+  padding: 110px 90px;
+  position: relative;
+  width: 100%;
+}
+.contacts-container {
+  margin-bottom: 55px;
+}
+.contacts-container a {
+  color: #c0c0c0;
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 10px;
+}
+.contacts-tel {
+  text-decoration: none;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.text-container {
+  margin: 60px 0 0 40px;
+}
+.text-container h3 {
+  margin-bottom: 10px;
+}
+.contacts-container div {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 24px;
+}
+.tech-skill-container {
+  margin-bottom: 55px;
+}
+.tech-skill-container li,
+.soft-skill-container li {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ff6b08;
+}
+.tech-skill-container li span,
+.soft-skill-container li span {
+  color: #fff;
+}
+
+/* About Me */
+.about-me-container h2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.about-me-container h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.about-me-discription {
+  color: #595959;
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+/* About Me END */
+
+/* Project */
+
+.project-container li a {
+  color: #ff6b08;
+  font-weight: 400;
+}
+.project-container li span {
+  font-weight: 400;
+}
+
+.project-container ul {
+  margin-bottom: 15px;
+}
+.project-container h3 {
+  margin-bottom: 13px;
+}
+.project-container {
+  margin-bottom: 50px;
+}
+/* Project END */
+
+/* Work experience  */
+.work-experience h3 {
+  margin-bottom: 20px;
+}
+.work-experience h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.work-experience h4 span {
+  color: #ff6b08;
+}
+.work-period {
+  font-size: 12px;
+  color: #a8a8a8;
+}
+.work-period span {
+  color: #000;
+  font-weight: 700;
+}
+.work-experience ul {
+  max-width: 535px;
+}
+.work-experience ul li {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #595959;
+}
+.work-experience div {
+  margin: 12px 0;
+}
+/* Work experience END */
+
+/* Education */
+
+.education-container {
+  margin-top: 43px;
+}
+.education-university {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 21px 0 15px 0;
+}
+.education-specialty {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* Education END */
+
+/* Change-theme-buttom */
+.change-theme {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.theme-button {
+  position: relative;
+}
+.light-theme .theme-button {
+  color: #6653d9;
+  border: 1px solid #6653d9;
+  background: transparent;
+  padding: 7px 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.theme-button:hover {
+  color: #fff;
+  background: #6653d9;
+}
+.theme-button::before {
+  content: "";
+}
+.light-theme .theme-button::before {
+  background-image: url("../img/moon-normal.svg");
+}
+.light-theme .theme-button:hover::before {
+  background-image: url("../img/moon-hover.svg");
+}
+.theme-button::before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 11px;
+  left: 10px;
+}
+.dark-theme.wrapper {
+  background: #17161a;
+  color: #fff;
+}
+.dark-theme .theme-button {
+  color: #9484f2;
+  border: 1px solid #9484f2;
+  padding: 7px 30px;
+  cursor: pointer;
+  background: transparent;
+}
+.dark-theme p,
+.dark-theme li {
+  color: #ccc !important;
+}
+
+.dark-theme .theme-button::before {
+  background-image: url("../img/sun-normal.svg");
+}
+
+.dark-theme .theme-button:hover {
+  color: #17161a;
+  background-color: #9484f2;
+}
+
+.dark-theme .theme-button:hover::before {
+  background-image: url("../img/sun-hover.svg");
+}
+/* Change-theme-buttom END */
+ol {
+  padding-left: 15px;
+}
+ul {
+  padding-left: 20px;
+}
+
+/* Мобильная верстка */
+@media screen and (max-width: 769px) {
+  body {
+    padding: 0;
+    font-size: 18px;
+  }
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .print-button {
+    display: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .about-me-container {
+    padding: 10px 15px;
+  }
+  .change-theme {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+    right: 0;
+  }
+  .about-me-discription {
+    text-align: justify;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .theme-button {
+    font-size: 22px;
+  }
+  .theme-button::before {
+    display: none;
+  }
+  .light-theme .theme-button {
+    color: #fff;
+    background: #6653d9;
+    padding: 20px 40px;
+  }
+  .theme-button,
+  .dark-theme .theme-button {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 40px;
+  }
+}
+
+@media print {
+
+  body {
+    padding: 0;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .change-theme {
+    display: none;
+  }
+
+}
+
+.project-container ul span {
+  font-weight: 600;
+}
+
+.project-container h5 {
+  font-weight: 700;
+  font-size: 16px;
+}
