@@ -35,7 +35,7 @@ aside img {
   width: 100%;
 }
 .contacts-container {
-  margin-bottom: 55px;
+  margin-bottom: 20px;
 }
 .contacts-container a {
   color: #c0c0c0;
@@ -163,6 +163,7 @@ h3 {
   font-weight: 700;
   line-height: 24px;
   padding: 21px 0 15px 0;
+  margin-bottom: 0;
 }
 .education-specialty {
   font-size: 14px;
