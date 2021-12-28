@@ -66,14 +66,16 @@ h3 {
   margin-bottom: 55px;
 }
 .tech-skill-container li,
-.soft-skill-container li {
+.soft-skill-container li,
+.languages-container li {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #ff6b08;
 }
 .tech-skill-container li span,
-.soft-skill-container li span {
+.soft-skill-container li span,
+.languages-container li span {
   color: #fff;
 }
 
