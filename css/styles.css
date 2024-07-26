@@ -86,7 +86,7 @@ h3 {
   line-height: 24px;
 }
 .about-me-container h1 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -114,7 +114,7 @@ h3 {
   margin-bottom: 13px;
 }
 .project-container {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 /* Project END */
 
@@ -155,20 +155,21 @@ h3 {
 /* Education */
 
 .education-container {
-  margin-top: 43px;
+  margin-top: 20px;
 }
 .education-university {
   color: #ff6b08;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  padding: 21px 0 15px 0;
+  padding-top: 5px;
   margin-bottom: 0;
 }
 .education-specialty {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+  margin-bottom: 0;
 }
 /* Education END */
 
@@ -273,8 +274,11 @@ ul {
     text-align: center;
     right: 0;
   }
-  .about-me-discription {
+  .about-me-description {
     text-align: justify;
+    .about-me-text {
+      margin-bottom: 0;
+    }
   }
   h3 {
     font-size: 30px;
